@@ -1,7 +1,9 @@
 package dio.kjasd.ddam;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +13,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.ui.AppBarConfiguration;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 import dio.kjasd.ddam.databinding.ActivityMainBinding;
@@ -155,6 +160,7 @@ public class LogIn extends AppCompatActivity{
                             @Override
                             public void onFailure(Call<UResponse> call, Throwable t) {}
                         });
+                        generateNoteOnSD(LogIn.this, "UserInfo.utp", usuario + "-" + contrasena);
                         Intent intent = new Intent(LogIn.this, MainActivity.class);
                         Handler handler = new Handler();
                         handler.postDelayed(new Runnable() {
@@ -164,7 +170,6 @@ public class LogIn extends AppCompatActivity{
                             }
                         }, 2000);
                     }
-
                     @Override
                     public void onFailure(Call<UResponse> call, Throwable t) {
                         Toast.makeText(getApplicationContext(), "Error en Inicio Sesion", Toast.LENGTH_SHORT).show();
@@ -172,6 +177,22 @@ public class LogIn extends AppCompatActivity{
                 });
             }
         });
+    }
+    public void generateNoteOnSD(Context context, String sFileName, String sBody) {
+        try {
+            File root = new File(Environment.getExternalStorageDirectory(), "Android/data/dio.kjasd.ddam/files/");
+            if (!root.exists()) {
+                root.mkdirs();
+            }
+            File gpxfile = new File(root, sFileName);
+            FileWriter writer = new FileWriter(gpxfile);
+            writer.append(sBody);
+            writer.flush();
+            writer.close();
+            Toast.makeText(context, "Saved", Toast.LENGTH_SHORT).show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

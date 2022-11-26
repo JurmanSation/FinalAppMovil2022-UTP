@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import java.util.HashMap;
@@ -30,6 +31,7 @@ public class FavoritosFragment extends Fragment {
     private static final String ARG_PARAM2 = "param2";
     Map<Integer, String> map = new HashMap<Integer, String>();
     TextToSpeech mTTS;
+    private AppCompatActivity mClass;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -63,11 +65,12 @@ public class FavoritosFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_favoritos, container, false);
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        //Toast.makeText(getActivity(), "Se guardo correctamente", Toast.LENGTH_SHORT).show();
+
         if(GLOBAL.PalabrasFavoritas.size() != 0){
             Integer[] id = {R.id.Slot1, R.id.Slot2, R.id.Slot3, R.id.Slot4,
                     R.id.Slot5, R.id.Slot6, R.id.Slot7, R.id.Slot8};
@@ -76,13 +79,18 @@ public class FavoritosFragment extends Fragment {
                 Button slot = (Button) view.findViewById(id[cont]);
                 slot.setText(pfav.getKeyWord());
                 map.put(id[cont], pfav.getFrase());
+                Button btn = (Button) view.findViewById(id[cont]);
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        ButtonClicked(v);
+                    }
+                });
                 cont++;
 
             }
         }
-
         return view;
-
     }
 
     public void ButtonClicked(View view) {
