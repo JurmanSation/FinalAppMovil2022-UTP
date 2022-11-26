@@ -58,8 +58,7 @@ public interface MyAPIService {
     @POST("EditPalabraFavorita.php")
     Call<UResponse> editPalabraFavorita(@Field("Frase") String Frase,
                                         @Field("KeyWord") String KeyWord,
-                                        @Field("idUsuario") Integer idUsuario,
-                                        @Field("Orden") Integer Orden);
+                                        @Field("idUsuario") Integer idUsuario);
 
     @FormUrlEncoded
     @POST("DeletePalabraFavoritaphp")

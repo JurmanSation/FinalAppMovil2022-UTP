@@ -37,6 +37,8 @@ public class FavoritosFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    Boolean Longtouched;
+
     public FavoritosFragment() {
         // Required empty public constructor
     }
@@ -100,7 +102,6 @@ public class FavoritosFragment extends Fragment {
     }
 
     public void ButtonClicked(View view) {
-
         mTTS = new TextToSpeech(getActivity(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -111,5 +112,6 @@ public class FavoritosFragment extends Fragment {
                 }
             }
         });
+
     }
 }

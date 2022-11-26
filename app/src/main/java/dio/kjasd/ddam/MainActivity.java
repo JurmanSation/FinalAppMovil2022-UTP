@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Inicio Sesion Correctamente", Toast.LENGTH_SHORT).show();
                     GLOBAL.usuario = User;
                     GLOBAL.idUsuario = id;
-                    Call<UResponse> callNConf =  MyAPIAdapter.getApiService().obtenerNumeroConfianza(id);
+                    Call<UResponse> callNConf = MyAPIAdapter.getApiService().obtenerNumeroConfianza(id);
                     callNConf.enqueue(new Callback<UResponse>() {
                         @Override
                         public void onResponse(Call<UResponse> call, Response<UResponse> response) {
