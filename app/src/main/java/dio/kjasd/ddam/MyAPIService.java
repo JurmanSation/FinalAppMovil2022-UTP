@@ -35,10 +35,6 @@ public interface MyAPIService {
                                         @Field("idUsuario") Integer idUsuario);
 
     @FormUrlEncoded
-    @POST("DeleteNumeroConfianza.php")
-    Call<UResponse> DeleteNumeroConfianza(@Field("idUsuario") Integer idUsuario);
-
-    @FormUrlEncoded
     @POST("InsertarPalabraFavorita.php")
     Call<UResponse> insertarPalabraFavorita(@Field("KeyWord") String KeyWord,
                                             @Field("idUsuario") Integer idUsuario,
@@ -46,13 +42,21 @@ public interface MyAPIService {
                                             @Field("Orden") Integer Orden);
 
     @FormUrlEncoded
+    @POST("ObtenerALLPalabraFavorita.php")
+    Call<UResponse> obtenerALLPalabraFavorita(@Field("idUsuario") Integer idUsuario);
+
+
+
+
+
+    @FormUrlEncoded
+    @POST("DeleteNumeroConfianza.php")
+    Call<UResponse> DeleteNumeroConfianza(@Field("idUsuario") Integer idUsuario);
+
+    @FormUrlEncoded
     @POST("ObtenerPalabraFavorita.php")
     Call<UResponse> obtenerPalabraFavorita(@Field("idUsuario") Integer idUsuario,
                                            @Field("Orden") Integer Orden);
-
-    @FormUrlEncoded
-    @POST("ObtenerALLPalabraFavorita.php")
-    Call<UResponse> obtenerALLPalabraFavorita(@Field("idUsuario") Integer idUsuario);
 
     @FormUrlEncoded
     @POST("EditPalabraFavorita.php")
