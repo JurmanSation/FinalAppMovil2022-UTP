@@ -71,29 +71,36 @@ public class FavoritosFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
+        Integer[] id = {R.id.Slot1, R.id.Slot2, R.id.Slot3, R.id.Slot4,
+                R.id.Slot5, R.id.Slot6, R.id.Slot7, R.id.Slot8};
+        Integer cont = 0;
+
         if(GLOBAL.PalabrasFavoritas.size() != 0){
-            Integer[] id = {R.id.Slot1, R.id.Slot2, R.id.Slot3, R.id.Slot4,
-                    R.id.Slot5, R.id.Slot6, R.id.Slot7, R.id.Slot8};
-            Integer cont = 0;
             for(PalabrasFavoritas pfav:GLOBAL.PalabrasFavoritas){
                 Button slot = (Button) view.findViewById(id[cont]);
                 slot.setText(pfav.getKeyWord());
                 map.put(id[cont], pfav.getFrase());
-                Button btn = (Button) view.findViewById(id[cont]);
-                btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        ButtonClicked(v);
-                    }
-                });
                 cont++;
 
             }
         }
+        cont = 0;
+        for(Integer idB:id){
+            Button btn = (Button) view.findViewById(id[cont]);
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ButtonClicked(v);
+                }
+            });
+            cont++;
+        }
+
         return view;
     }
 
     public void ButtonClicked(View view) {
+
         mTTS = new TextToSpeech(getActivity(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {

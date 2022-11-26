@@ -24,6 +24,7 @@ import java.util.Locale;
 
 import dio.kjasd.ddam.GLOBAL;
 import dio.kjasd.ddam.MyAPIAdapter;
+import dio.kjasd.ddam.PalabrasFavoritas;
 import dio.kjasd.ddam.R;
 import dio.kjasd.ddam.UResponse;
 import retrofit2.Call;
@@ -86,6 +87,7 @@ public class HablemosFragment extends Fragment {
                                                         UResponse respuesta = response.body();
                                                         Boolean validacion = respuesta.getValidacion();
                                                         if(validacion){
+                                                            GLOBAL.PalabrasFavoritas.add(new PalabrasFavoritas(m_Text, text, GLOBAL.PalabrasFavoritas.size() + 1));
                                                             Toast.makeText(getActivity(), "Se guardo correctamente", Toast.LENGTH_SHORT).show();
                                                         }
                                                     }

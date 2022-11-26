@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
             adb.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
                     File sdcard = Environment.getExternalStorageDirectory();
-                    File file = new File(sdcard, "UserInfo.utp");
+                    File file = new File(sdcard, "Android/data/dio.kjasd.ddam/files/UserInfo.utp");
                     boolean deleted = file.delete();
                     if (deleted){
                         GLOBAL.NumeroConfianza = null;
@@ -215,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
                                 startActivity(intent);
                             }
                         }, 2000);
-                        Toast.makeText(getApplicationContext(), "Sesion Iniciada", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Sesion Finalizada", Toast.LENGTH_SHORT).show();
                     }
 
                 }
