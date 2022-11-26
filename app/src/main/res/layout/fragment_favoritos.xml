@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@drawable/fondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/estrella"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/textFavoritos"
+                    android:layout_width="327dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Cajón de Favoritos"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/FavLayout">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/Slot1"
+                            android:layout_width="137dp"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="50dp"
+                            android:onClick="ButtonClicked"
+                            android:text="Slot 1" />
+
+                        <Button
+                            android:id="@+id/Slot2"
+                            android:layout_width="137dp"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="50dp"
+                            android:onClick="ButtonClicked"
+                            android:text="Slot 2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/Slot3"
+                            android:layout_width="137dp"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="30dp"
+                            android:onClick="ButtonClicked"
+                            android:text="Slot 3" />
+
+                        <Button
+                            android:id="@+id/Slot4"
+                            android:layout_width="137dp"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="30dp"
+                            android:onClick="ButtonClicked"
+                            android:text="Slot 4" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/Slot5"
+                            android:layout_width="137dp"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="30dp"
+                            android:onClick="ButtonClicked"
+                            android:text="Slot 5" />
+
+                        <Button
+                            android:id="@+id/Slot6"
+                            android:layout_width="137dp"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="30dp"
+                            android:onClick="ButtonClicked"
+                            android:text="Slot 6" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/Slot7"
+                            android:layout_width="137dp"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="30dp"
+                            android:onClick="ButtonClicked"
+                            android:text="Slot 7" />
+
+                        <Button
+                            android:id="@+id/Slot8"
+                            android:layout_width="137dp"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="30dp"
+                            android:onClick=""
+                            android:text="Slot 8" />
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>

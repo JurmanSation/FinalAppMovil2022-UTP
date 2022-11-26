@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#650404"
+    android:background="@drawable/fondo"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textHablemos2"
+            android:layout_width="264dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Pictogramas!"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:id="@+id/yoquierohome"
+                    android:layout_width="75dp"
+                    android:layout_height="28.5dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/yoquierohome_string"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/quierohome"
+                    android:layout_width="264dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/quieroobjetoview"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/yomesientohome"
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/yomesientohome_string"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/sientohome"
+                    android:layout_width="264dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/sientoview"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/yomesientoconhome"
+                    android:layout_width="163dp"
+                    android:layout_height="28.5dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/yomesientoconhome_string"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/sientoconhome"
+                    android:layout_width="264dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/sientoconview"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/yovoyahome"
+                    android:layout_width="75dp"
+                    android:layout_height="28.5dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/yovoyahome_string"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/yovoyhome"
+                    android:layout_width="264dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/yovoyview"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/misnecesidadeshome"
+                    android:layout_width="151dp"
+                    android:layout_height="28.5dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/misnecesidadeshome_string"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/necesitohome"
+                    android:layout_width="264dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/necesitoview"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/yonecesitohome"
+                    android:layout_width="197dp"
+                    android:layout_height="28.5dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/yonecesitohome_string"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/necesihome"
+                    android:layout_width="264dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/yoneedview"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:backgroundTint="@null" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" >
+
+                </Space>
+" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

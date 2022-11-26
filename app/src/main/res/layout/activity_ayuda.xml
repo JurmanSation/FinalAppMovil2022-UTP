@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ayuda">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="677dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ayudita"
+                android:layout_width="367dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/ayudita_string"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal|center"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="554dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/primertexto"
+                    android:layout_width="367dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/primertexto_string"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buttonayuda"
+                        android:layout_width="355dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="05dp"
+                        android:fontFamily="sans-serif-black"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:onClick="callAyuda_Hablemos"
+                        android:text="Texto a Voz" />
+
+                    <Button
+                        android:id="@+id/button9ayuda"
+                        android:layout_width="355dp"
+                        android:layout_height="76dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="05dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="Pictogramas"
+                        android:onClick="callAyuda_Pictograma"
+                        android:fontFamily="sans-serif-black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/segundotexto"
+                            android:layout_width="342dp"
+                            android:layout_height="145dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="05dp"
+                            android:text="@string/segundotexto_string"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal|center"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="342dp"
+                                android:layout_height="145dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="05dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="DDAM@utp.edu.pe"
+                                android:textColor="@color/appbar"
+                                android:layout_gravity="center_horizontal|center"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

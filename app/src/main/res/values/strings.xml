@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">DictoGrama</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">DictoGrama</string>
+    <string name="menu_Hablemos">Hablemos!</string>
+    <string name="menu_Picto">Pictogramas</string>
+    <string name="menu_configuración">Pictogramas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- String Pictograma -->
+    <string name="iniciohome2_string">Inicio</string>
+    <string name="ayudahome2_string">Ayuda</string>
+    <string name="confighome2_string">Configuracion</string>
+    <string name="yoquierohome_string">Yo quiero</string>
+    <string name="yomesientohome_string">Yo me siento</string>
+    <string name="yomesientoconhome_string">Yo me siento con</string>
+    <string name="yovoyahome_string">Yo voy a</string>
+    <string name="yonecesitohome_string">Yo necesito</string>
+    <string name="misnecesidadeshome_string">Mis necesidades</string>
+
+    <!-- Ayuda Strings -->
+    <string name="inicioayuda1_string">Inicio</string>
+    <string name="ayuda1_string">Ayuda</string>
+    <string name="configu_string">Configuracion</string>
+    <string name="ayudita_string">AYUDA</string>
+    <string name="primertexto_string">Aqui podemos ayudarte a como usar la funcionalidaes de la aplicación.
+
+Seleccione la opción de las funcionalidades que desea observar</string>
+    <string name="segundotexto_string"> En caso de estar experimentando problemas con la aplicacin, pongase en contacto con nosotros envindonos un correo electrnico indicando el motivo de su reclamo.</string>
+
+    <!--  ajustes strings  -->
+    <string name="inicio_string">Inicio</string>
+    <string name="ayuda_string">Ayuda</string>
+    <string name="configuracion_string">Configuracion</string>
+    <string name="cambiarperfil_string">Cambiar Perfil</string>
+    <string name="hombre_string">Hombre</string>
+    <string name="mujer_string">Mujer</string>
+    <string name="nombreconfig_string">Nombre</string>
+    <string name="vozaudio_string">Voz</string>
+    <!--  ayuda strings  -->
+
+    <!--  centroayudaframe8 strings  -->
+    <string name="titulo_string">Cmo funciona una tabla de comunicacin?</string>
+    <string name="primertextocentro_string"> Las tablas de comunicación tienen como funcion principal la comunicación de un individuo con otro. El tablero permite facilitar la comunicación de una persona con dificultades de habla, dificultades de expresarse, entre otros.</string>
+    <string name="segundotextocentro_string"> Para poder comunicarse, unicamente debe presionar los dibujos que representan acciones, sentimientos, objetos, lugares, etc. La aplicacin dira lo que presion con el tipo de voz elegido (masculino o femenino)A continuación verás una tabla de comunicación fsica.</string>
+    <string name="tercertexto_string"> Al igual que una tabla de comunicacion fisica, con DictaTEA usted deber señalar y presionar x_string">lavarme la cara </string>
+
+    <!--  objeto strings  -->
+    <string name="quieroobjetoframe_string">Yo quiero </string>
+    <string name="lapizframetx_string">el lpiz</string>
+    <string name="libroframetx_string">el libro</string>
+    <string name="pelucheframetx_string">el peluche</string>
+    <string name="controlframetx_string">el control</string>
+    <string name="pelotaframetx_string">la pelota</string>
+    <string name="jugueteframetx_string">el juguete</string>
+    <string name="relojframetx_string">el reloj</string>
+    <string name="botellaframetx_string">la botella</string>
+
+    <!--  yomesientocon strings  -->
+    <string name="yosientocon_string">Yo me siento con</string>
+    <string name="gripetx_string">gripe</string>
+    <string name="corazontx_string">dolor en el corazn</string>
+    <string name="estomagotx_string">dolor de estmago</string>
+    <string name="cabezatx_string">dolor de cabeza</string>
+    <string name="gargantatx_string">dolor de garganta</string>
+    <string name="espaldatx_string">dolor de espalda</string>
+    <string name="oidotx_string">dolor de odo</string>
+    <string name="muelatx_string">dolor de muela</string>
+
+    <!--  yonecesito strings  -->
+    <string name="yonecesitotx_string">Yo necesito</string>
+    <string name="leertx_string">leer</string>
+    <string name="escribirtx_string">escribir</string>
+    <string name="ayudatareatx_string">ayuda con mi tarea</string>
+    <string name="cortartx_string">cortar imgenes</string>
+    <string name="tareatx_string">hacer tarea</string>
+    <string name="examentx_string">estudiar para mi examen</string>
+    <string name="memorizartx_string">memorizar</string>
+    <string name="matematicatx_string">practicar matemtica</string>
+
+    <!--  yoquiero strings  -->
+    <string name="yoquieroquiero_string">Yo quiero</string>
+    <string name="comertx_string">comer</string>
+    <string name="jugartx_string">jugar</string>
+    <string name="dormirtc_string">dormir</string>
+    <string name="baniarmetx_string">bañarme</string>
+    <string name="bebertx_string">beber</string>
+    <string name="baniotx_string">ir al baño</string>
+    <string name="caminartx_string">caminar</string>
+    <string name="hablartx_string">hablar</string>
+    <string name="objetotx_string">objeto</string>
+
+    <!--  yosiento strings  -->
+    <string name="yosiento_string">Yo me siento</string>
+    <string name="feliztx_string">feliz</string>
+    <string name="asustadotx_string">asustado</string>
+    <string name="sorprendidotx_string">sorprendido</string>
+    <string name="avergonzadotx_string">avergonzado</string>
+    <string name="cansadotx_string">cansado</string>
+    <string name="tranquilotx_string">tranquilo</string>
+    <string name="enfermotx_string">enfermo</string>
+    <string name="tristetx_string">triste</string>
+    <string name="aburridotx_string">aburrido</string>
+    <string name="enojadotx_string">enojado</string>
+    <string name="hambrientotx_string">hambriento</string>
+
+    <!--  yovoy strings  -->
+    <string name="yovoytx_string">Yo voy</string>
+    <string name="escuelatx_string">a la escuela</string>
+    <string name="abuelostx_string">a la casa de mis abuelos</string>
+    <string name="amigostx_string">a la casa de mis amigos</string>
+    <string name="juegostx_string">a los juegos</string>
+    <string name="parquetx_string">al parque</string>
+    <string name="cinetx_string">al cine</string>
+    <string name="ajugartx_string">a jugar</string>
+    <string name="casatx_string">a mi casa</string>
+    <string name="title_activity_yo_voy">Yo_voy</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+</resources>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@drawable/fondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textHome"
+                    android:layout_width="393dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Bienvenido!"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+
+                <ImageView
+                    android:id="@+id/mesientoconimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="mesientocon"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/imgperfil" />
+
+                <TextView
+                    android:id="@+id/txtnombre"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:src="@drawable/globocajon" />
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="221dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:orientation="vertical">
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="179dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/Hablemosboton"
+                                android:layout_width="150dp"
+                                android:layout_height="156dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/btnhablemos"
+                                android:contentDescription="gripe"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:gravity="center"
+                                app:backgroundTint="@null" />
+
+                            <Button
+                                android:id="@+id/Pictogramaboton"
+                                android:layout_width="150dp"
+                                android:layout_height="156dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/btnpictograma"
+                                android:contentDescription="espalda"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:gravity="center"
+                                app:backgroundTint="@null" />
+
+                            <Button
+                                android:id="@+id/Ayudaboton"
+                                android:layout_width="150dp"
+                                android:layout_height="156dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/btnayuda"
+                                android:contentDescription="corazon"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:gravity="center"
+                                app:backgroundTint="@null" />
+
+                            <Button
+                                android:id="@+id/Configboton"
+                                android:layout_width="150dp"
+                                android:layout_height="156dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/btnconfig"
+                                android:contentDescription="cabeza"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:backgroundTint="@null" />
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txtHablemos"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="sans-serif-black"
+                                android:gravity="center"
+                                android:text="Hablemos"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtPictograma"
+                                android:layout_width="144dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="sans-serif-black"
+                                android:gravity="center"
+                                android:text="Pictogramas"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txtAyuda"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="sans-serif-black"
+                                android:gravity="center"
+                                android:text="Ayuda"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:id="@+id/txtConfiguracion"
+
+                                android:layout_width="144dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="sans-serif-black"
+                                android:gravity="center"
+                                android:text="Configuración"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="202dp"
+                            android:gravity="center">
+
+                        </TableRow>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                            </TableRow>
+
+
+                        </TableLayout>
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>
+

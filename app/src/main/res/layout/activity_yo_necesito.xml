@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YoNecesito">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/yonecesitonecesito"
+                    android:layout_width="375dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Yo necesito ________"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:id="@+id/yonecesitoview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="necesitoview"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/necesitoview" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/leertx"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Leer"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/tareatx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Hacer Tarea"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/estudiartx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Estudiar"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/leer"
+                                    android:layout_width="114dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/libro"
+                                    android:contentDescription="leer"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeLeer"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/tarea"
+                                    android:layout_width="114dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/hacertarea"
+                                    android:contentDescription="tarea"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeTarea"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/estudiar"
+                                    android:layout_width="114dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/estudiar"
+                                    android:contentDescription="estudiar"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeEstudiar"
+                                    app:backgroundTint="@null" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/escribirtx"
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Escribir"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/ayudatareatx"
+                                    android:layout_width="130dp"
+                                    android:layout_height="55dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Ayuda con mi Tarea"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/cortartx"
+                                    android:layout_width="104dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Cortar imagenes"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="205dp"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/escribir"
+                                    android:layout_width="114dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/lapiz"
+                                    android:contentDescription="escribir"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeEscribir"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/ayudat"
+                                    android:layout_width="114dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/ayuda"
+                                    android:contentDescription="ayudat"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeAyudat"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/cortar"
+                                    android:layout_width="114dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/cortar"
+                                    android:contentDescription="cortar"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeCortar"
+                                    app:backgroundTint="@null" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/practicarmatetx"
+                                    android:layout_width="112dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Practicar Matématica"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/memorizartx"
+                                    android:layout_width="112dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Memorizar"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/matemarica"
+                                    android:layout_width="114dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/hacertarea"
+                                    android:contentDescription="matematica"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeMatematica"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/memorizar"
+                                    android:layout_width="114dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/estudiar"
+                                    android:contentDescription="memorizar"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeMemorizar"
+                                    app:backgroundTint="@null" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

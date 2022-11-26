@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="dio.kjasd.ddam.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_picto"
+            app:destination="@id/nav_picto" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_hablemos"
+            app:destination="@id/nav_hablemos" />
+        <action
+            android:id="@+id/action_nav_home_to_settings2"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_nav_home_to_logIn2"
+            app:destination="@id/logIn" />
+        <action
+            android:id="@+id/action_nav_home_to_ayuda_Pictogramas"
+            app:destination="@id/ayuda_Pictogramas" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_hablemos"
+        android:name="dio.kjasd.ddam.ui.hablemos.HablemosFragment"
+        android:label="@string/menu_Hablemos"
+        tools:layout="@layout/fragment_hablemos" >
+        <action
+            android:id="@+id/action_nav_hablemos_to_favoritosFragment2"
+            app:destination="@id/favoritosFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_picto"
+        android:name="dio.kjasd.ddam.ui.pictogramas.PictogramasFragment"
+        android:label="@string/menu_Picto"
+        tools:layout="@layout/fragment_pictogramas" >
+        <action
+            android:id="@+id/action_nav_picto_to_yoQuiero"
+            app:destination="@id/yoQuiero" />
+        <action
+            android:id="@+id/action_nav_picto_to_yomesiento"
+            app:destination="@id/yomesiento" />
+        <action
+            android:id="@+id/action_nav_picto_to_misNecesidades"
+            app:destination="@id/misNecesidades" />
+        <action
+            android:id="@+id/action_nav_picto_to_yoVoy"
+            app:destination="@id/yoVoy" />
+        <action
+            android:id="@+id/action_nav_picto_to_sientoCon2"
+            app:destination="@id/sientoCon" />
+        <action
+            android:id="@+id/action_nav_picto_to_yoNecesito"
+            app:destination="@id/yoNecesito" />
+    </fragment>
+    <activity
+        android:id="@+id/settings"
+        android:name="dio.kjasd.ddam.Settings"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+    <activity
+        android:id="@+id/ayuda"
+        android:name="dio.kjasd.ddam.Ayuda"
+        android:label="activity_ayuda"
+        tools:layout="@layout/activity_ayuda"
+        />
+    <activity
+        android:id="@+id/ayuda_Hablemos"
+        android:name="dio.kjasd.ddam.Ayuda_Hablemos"
+        android:label="activity_ayuda_hablemos"
+        tools:layout="@layout/activity_ayuda_hablemos" />
+    <activity
+        android:id="@+id/yoQuiero"
+        android:name="dio.kjasd.ddam.YoQuiero"
+        android:label="activity_yo_quiero"
+        tools:layout="@layout/activity_yo_quiero" />
+    <activity
+        android:id="@+id/ayuda_Pictogramas"
+        android:name="dio.kjasd.ddam.Ayuda_Pictogramas"
+        android:label="activity_ayuda_pictogramas"
+        tools:layout="@layout/activity_ayuda_pictogramas" />
+    <fragment
+        android:id="@+id/favoritosFragment2"
+        android:name="dio.kjasd.ddam.ui.hablemos.FavoritosFragment"
+        android:label="FavoritosFragment" />
+    <activity
+        android:id="@+id/misNecesidades"
+        android:name="dio.kjasd.ddam.MisNecesidades"
+        android:label="activity_mis_necesidades"
+        tools:layout="@layout/activity_mis_necesidades" />
+    <activity
+        android:id="@+id/sientoCon"
+        android:name="dio.kjasd.ddam.SientoCon"
+        android:label="activity_siento_con"
+        tools:layout="@layout/activity_siento_con" />
+    <activity
+        android:id="@+id/logIn"
+        android:name="dio.kjasd.ddam.LogIn"
+        android:label="activity_usuario"
+        tools:layout="@layout/activity_usuario" />
+    <activity
+        android:id="@+id/yoNecesito"
+        android:name="dio.kjasd.ddam.YoNecesito"
+        android:label="activity_yo_necesito"
+        tools:layout="@layout/activity_yo_necesito" />
+    <activity
+        android:id="@+id/yoVoy"
+        android:name="dio.kjasd.ddam.YoVoy"
+        android:label="activity_yo_voy"
+        tools:layout="@layout/activity_yo_voy" />
+    <activity
+        android:id="@+id/yomesiento"
+        android:name="dio.kjasd.ddam.Yomesiento"
+        android:label="activity_yomesiento"
+        tools:layout="@layout/activity_yomesiento" />
+</navigation>

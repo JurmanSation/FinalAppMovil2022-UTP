@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_usuario"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".LogIn">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="677dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:srcCompat="@drawable/imgperfil" />
+
+            <TextView
+                android:layout_width="381dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center_horizontal|center"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="USUARIO"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/nombre"
+                    android:layout_width="351dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Nombre de Usuario"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+            </TableRow>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/edit_text"
+                    android:fontFamily="sans-serif-black"
+                    android:hint="INGRESA SU USUARIO"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="90dp"
+                    android:paddingRight="26dp"
+                    android:textSize="20sp" />
+
+                <TableRow
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content">
+
+                    <Space
+                        android:layout_width="14dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="248dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Contraseña"
+                        android:textColor="@color/black"
+                        android:textSize="32sp" />
+                </TableRow>
+
+                <EditText
+                    android:id="@+id/Contrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/edit_text"
+                    android:fontFamily="sans-serif-black"
+                    android:hint="INGRESA SU CONTRASEÑA"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="90dp"
+                    android:paddingRight="26dp"
+                    android:textSize="20sp" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="55dp"
+                        android:text="INICIAR SESION" />
+
+
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="163dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="right"
+                        android:text="REGISTRARSE" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TableRow>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:id="@+id/Hablemoscontainer"
+    android:background="@drawable/fondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/voz" />
+
+                <TextView
+                    android:id="@+id/textHablemos2"
+                    android:layout_width="327dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Crear mensaje de texto"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="308dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/editTextH"
+                    android:layout_width="match_parent"
+                    android:layout_height="211dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/edit_text"
+                    android:fontFamily="sans-serif-black"
+                    android:hint="INGRESA EL TEXTO DE VOZ"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="50dp"
+                    android:paddingBottom="150dp"
+                    android:textSize="20sp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp">
+
+                    <Button
+                        android:id="@+id/btnHablar"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:enabled="false"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="Hablemos!" />
+
+
+                    <Button
+                        android:id="@+id/btnFavoritos"
+                        android:layout_width="79dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/ic_baseline_star_24"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:backgroundTint="@null" />
+
+
+                    <Button
+                        android:id="@+id/btnLimpiar"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="Limpiar" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Tono_Voz"
+                    android:layout_width="386dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Tono de voz"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp">
+
+
+
+
+                    <TextView
+                        android:id="@+id/Fuerte"
+                        android:layout_width="wrap_content"
+                        android:layout_height="53dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="Fuerte"
+                        android:textSize="25sp" />
+
+                    <SeekBar
+                        android:id="@+id/seek_bar_tono"
+                        android:progress="50"
+                        android:layout_width="222dp"
+                        android:layout_height="60dp"
+                        android:paddingRight="30dp"
+                        ></SeekBar>
+
+                    <TextView
+                        android:id="@+id/Aguda"
+                        android:layout_width="92dp"
+                        android:layout_height="53dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Aguda"
+                        android:textSize="25sp" />
+
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/Velocidad_Voz"
+                    android:layout_width="386dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Velocidad de la Voz"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp">
+
+
+                    <TextView
+                        android:id="@+id/Lenta"
+                        android:layout_width="84dp"
+                        android:layout_height="53dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="Lento"
+                        android:textSize="25sp" />
+
+                    <SeekBar
+                        android:id="@+id/seek_bar_velocidad"
+                        android:progress="50"
+                        android:layout_width="222dp"
+                        android:layout_height="60dp"
+                        android:paddingRight="10dp"></SeekBar>
+
+                    <TextView
+                        android:id="@+id/Rapido"
+                        android:layout_width="92dp"
+                        android:layout_height="53dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Rapido"
+                        android:textSize="25sp" />
+
+                </TableRow>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>

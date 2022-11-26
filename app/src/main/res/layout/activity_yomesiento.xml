@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Yomesiento">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/yomesientisiento"
+                    android:layout_width="375dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Yo me siento ________"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:id="@+id/mesientoview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="yomesiento"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/yo_me_siento" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/felitx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Feliz"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/tristetx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Triste"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/enojadotx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Enojado"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/feliz"
+                                    android:layout_width="94dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/feliz"
+                                    android:contentDescription="feliz"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeFeliz"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/triste"
+                                    android:layout_width="86dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/triste"
+                                    android:contentDescription="triste"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeTriste"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/enojado"
+                                    android:layout_width="86dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/enojado"
+                                    android:contentDescription="enojado"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeEnojado"
+                                    app:backgroundTint="@null" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/sorprendidotx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Sorprendido"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/cansadotx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Cansado"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/tranquilotx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Tranquilo"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/sorprendido"
+                                    android:layout_width="86dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/sorprendido"
+                                    android:contentDescription="sorprendido"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeSorprendido"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/cansado"
+                                    android:layout_width="86dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/cansado"
+                                    android:contentDescription="cansado"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeCansado"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/tranquilo"
+                                    android:layout_width="86dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/tranquilo"
+                                    android:contentDescription="cansado"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeTranquilo"
+                                    app:backgroundTint="@null" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/asustadotx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Asustado"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/aburridotx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Aburrido"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/hambrientotx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Hambriento"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/asustado"
+                                    android:layout_width="86dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/asustado"
+                                    android:contentDescription="asustado"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeAsustado"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/aburrido"
+                                    android:layout_width="86dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/aburrido"
+                                    android:contentDescription="aburrido"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeAburrido"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/hambriento"
+                                    android:layout_width="86dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/hambriento"
+                                    android:contentDescription="hambriento"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeHambriento"
+                                    app:backgroundTint="@null" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/avegonzadotx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Avergonzado"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/enfermotx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:gravity="center"
+                                    android:text="Enfermo"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/avergonzado"
+                                    android:layout_width="85dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/avergonzado"
+                                    android:contentDescription="avergonzado"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeAvergonzado"
+                                    app:backgroundTint="@null" />
+
+                                <Button
+                                    android:id="@+id/enfermo"
+                                    android:layout_width="115dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/gripe"
+                                    android:contentDescription="hablar"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:onClick="MensajeEnfermo"
+                                    app:backgroundTint="@null" />
+
+
+                            </TableRow>
+
+                        </TableLayout>
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
